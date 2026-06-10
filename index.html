@@ -281,16 +281,16 @@
             let calories, protein, fat;
             if (goal === "cut") {
                 calories = weight * 22;
-                protein = (weight * 2.2).toFixed(1);
-                fat = (weight * 0.7).toFixed(1);
+                protein = (weight * 1.8).toFixed(1);
+                fat = (weight * 0.6).toFixed(1);
             } else if (goal === "bulk") {
                 calories = weight * 38;
-                protein = (weight * 1.9).toFixed(1);
-                fat = (weight * 0.9).toFixed(1);
+                protein = (weight * 1.5).toFixed(1);
+                fat = (weight * 0.8).toFixed(1);
             } else {
                 calories = weight * 30;
-                protein = (weight * 2.0).toFixed(1);
-                fat = (weight * 0.8).toFixed(1);
+                protein = (weight * 1.2).toFixed(1);
+                fat = (weight * 0.7).toFixed(1);
             }
             let fiber = ((calories / 1000) * 14).toFixed(1);
             let carbs = ((calories - (protein * 4 + fat * 9)) / 4).toFixed(1);
